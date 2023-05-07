@@ -1,8 +1,7 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
-import React, { PureComponent } from "react";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
 const data = [
   {
@@ -106,9 +105,10 @@ const SideOvers = ({ open, setOpen, music }) => {
                                 position: "relative",
                                 marginTop: "10px",
                                 color: "white",
+                                stroke: "white",
                               }}
                             />
-                            <defs>
+                            {/* <defs>
                               <linearGradient id="colorUv" x1="0" y1="0" x2="1" y2="0">
                                 <stop offset="10%" stopColor="#147eb7" />
                                 <stop offset="90%" stopColor="#5b4aff" />
@@ -117,9 +117,9 @@ const SideOvers = ({ open, setOpen, music }) => {
                                 <stop offset="5%" stopColor="#04daff" />
                                 <stop offset="95%" stopColor="#090b72" />
                               </linearGradient>
-                            </defs>
-                            <Bar dataKey="unique_plays" fill="url(#colorUv)" />
-                            <Bar dataKey="total_plays" fill="url(#colorPv)" />
+                            </defs> */}
+                            <Bar dataKey="unique_plays" fill="#9492f0" />
+                            <Bar dataKey="total_plays" fill="#5e74f4" />
                           </BarChart>
                         </ResponsiveContainer>
                       </div>

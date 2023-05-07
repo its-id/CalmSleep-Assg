@@ -123,7 +123,7 @@ const Layout = () => {
         </Transition.Root>
 
         {/* Static sidebar for desktop */}
-        <div className="hidden md:flex md:w-56 md:flex-col md:fixed md:inset-y-0">
+        <div className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex-1 flex flex-col min-h-0 bg-gradient-to-b	from-[#090b72] to-[#5b4aff] shadow-2xl">
             <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">

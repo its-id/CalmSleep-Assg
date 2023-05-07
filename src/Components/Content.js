@@ -109,7 +109,7 @@ const Content = () => {
                       <img className="h-12 w-12 rounded-full" src={music.image} alt="" />
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-3 md:gap-4">
-                      <p className="text-xl font-medium text-indigo-300 truncate flex items-center">{music.title}</p>
+                      <p className="text-xl font-medium text-white truncate flex items-center">{music.title}</p>
                       <div className="hidden md:flex items-center justify-around">
                         <div>
                           <p className="text-sm text-gray-300">Total Plays</p>
@@ -132,7 +132,7 @@ const Content = () => {
                           <span className="text-sm font-medium text-blue-700 dark:text-white">{music.completion_rate}%</span>
                         </div>
                         <div className="w-full bg-gray-400 bg-opacity-20 backdrop-blur-lg rounded-lg h-4">
-                          <div className="bg-blue-600 h-4 rounded-lg" style={{ width: music.completion_rate + "%" }}></div>
+                          <div className="bg-[#5e74f4] h-4 rounded-lg" style={{ width: music.completion_rate + "%" }}></div>
                         </div>
                       </div>
                     </div>
